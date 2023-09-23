@@ -1,0 +1,10 @@
+
+services:
+  app:
+    container_name: ${APP_NAME}
+    build: .
+    restart: always
+    ports:
+      - "${APP_PORT}:8080"
+    volumes:
+      - .:/app 
